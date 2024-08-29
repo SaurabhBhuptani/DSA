@@ -34,8 +34,8 @@ void rotate(vector<vector<int>> &arr, int row, int col){
         for (int i = 0; i < row; i++){
             for (int j = 0; j < (col/2); j++){
                 temp = arr[i][j];
-                arr[i][j] = arr[i][col-1];
-                arr[i][col-1] = temp;
+                arr[i][j] = arr[i][col-j-1];
+                arr[i][col-j-1] = temp;
             }
         }
     }
